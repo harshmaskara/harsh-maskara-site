@@ -17,12 +17,12 @@
     }
 
     header {
-      padding: 100px 20px 60px;
+      padding: 120px 20px 80px;
       text-align: center;
     }
 
     h1 {
-      font-size: 48px;
+      font-size: 52px;
       margin-bottom: 10px;
       letter-spacing: -1px;
     }
@@ -39,48 +39,65 @@
       color: #444;
     }
 
+    .cta-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      border: 1px solid #111;
+      text-decoration: none;
+      color: #111;
+      transition: 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #111;
+      color: #fff;
+    }
+
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 60px 20px;
     }
 
     h2 {
       margin-bottom: 25px;
-      font-size: 24px;
+      font-size: 26px;
     }
 
-    .books {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
 
-    .book {
+    .card {
       border: 1px solid #eee;
       padding: 20px;
       transition: 0.3s;
+      cursor: pointer;
     }
 
-    .book:hover {
+    .card:hover {
       border-color: #111;
       transform: translateY(-5px);
     }
 
-    .book a {
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
+    .card p {
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
     }
 
-    .services {
-      line-height: 2;
-      color: #444;
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
     .philosophy {
       font-style: italic;
       color: #555;
+      max-width: 700px;
     }
 
     footer {
@@ -96,59 +113,77 @@
 
 <header>
   <h1>Harsh Maskara</h1>
-  <p class="subtitle">Author & Growth Strategy Consultant</p>
+  <p class="subtitle">Growth Strategy Consultant & Author</p>
   <p class="hero-text">
-    Understanding people—on paper and in markets.  
-    I write about human behavior and help businesses turn insight into meaningful growth.
+    I help businesses understand people better—and turn that understanding into meaningful growth.
+    My writing explores the same ideas through a more personal lens.
   </p>
+
+  <a href="mailto:harshmaskara01@gmail.com" class="cta-button">
+    Work With Me
+  </a>
 </header>
 
 <section>
-  <h2>Books</h2>
-  <div class="books">
-    <div class="book"><a href="#">Making Friends with Mania</a></div>
-    <div class="book"><a href="https://www.amazon.com/Eagles-fly-alone-guide-inner/dp/B0GPQ46SZQ" target="_blank">Eagles Fly Alone</a></div>
-    <div class="book"><a href="#">Deliberate</a></div>
-    <div class="book"><a href="https://www.amazon.com/Naked-Mr-Harsh-Vardhan-Maskara/dp/B0GQQ1MBTK" target="_blank">Naked</a></div>
-    <div class="book"><a href="https://www.amazon.com/Asylum-Mr-Harsh-Vardhan-Maskara/dp/B0GR9KBJD7" target="_blank">Asylum</a></div>
-    <div class="book"><a href="https://www.amazon.com/Anonymity-Mr-Harsh-Vardhan-Maskara/dp/B0GRQW2TFQ" target="_blank">Anonymity</a></div>
-  </div>
-</section>
-<section>
   <h2>Featured Work</h2>
+  <div class="grid">
 
-  <div class="books">
+    <a href="#">
+      <div class="card">
+        <strong>Understanding Modern Consumers</strong>
+        <p>How shifting aspirations are redefining decision-making.</p>
+      </div>
+    </a>
 
-    <div class="book">
-      <strong>Understanding Modern Consumers</strong>
-      <p>How shifting aspirations are redefining decision-making in urban India.</p>
-    </div>
+    <a href="#">
+      <div class="card">
+        <strong>Positioning for Growth</strong>
+        <p>Why most brands fail to differentiate—and how to fix it.</p>
+      </div>
+    </a>
 
-    <div class="book">
-      <strong>Positioning for Growth</strong>
-      <p>Why most brands struggle to differentiate—and how clarity drives scale.</p>
-    </div>
+    <a href="#">
+      <div class="card">
+        <strong>The Insight Gap</strong>
+        <p>Data is everywhere. Real understanding is not.</p>
+      </div>
+    </a>
 
-    <div class="book">
-      <strong>The Insight Gap</strong>
-      <p>Data is everywhere. Real understanding is not. A perspective on qualitative depth.</p>
-    </div>
-
-    <div class="book">
-      <strong>Listening as Strategy</strong>
-      <p>What businesses miss when they focus on answers instead of questions.</p>
-    </div>
+    <a href="#">
+      <div class="card">
+        <strong>Listening as Strategy</strong>
+        <p>What businesses miss when they don’t truly listen.</p>
+      </div>
+    </a>
 
   </div>
 </section>
+
 <section>
-  <h2>Work With Me</h2>
-  <p class="services">
-    Growth strategy <br>
-    Marketing positioning <br>
-    Consumer insight <br>
-    Qualitative research
-  </p>
+  <h2>Books</h2>
+  <div class="grid">
+
+    <a href="#"><div class="card">Making Friends with Mania</div></a>
+
+    <a href="https://www.amazon.com/Eagles-fly-alone-guide-inner/dp/B0GPQ46SZQ" target="_blank">
+      <div class="card">Eagles Fly Alone</div>
+    </a>
+
+    <a href="#"><div class="card">Deliberate</div></a>
+
+    <a href="https://www.amazon.com/Naked-Mr-Harsh-Vardhan-Maskara/dp/B0GQQ1MBTK" target="_blank">
+      <div class="card">Naked</div>
+    </a>
+
+    <a href="https://www.amazon.com/Asylum-Mr-Harsh-Vardhan-Maskara/dp/B0GR9KBJD7" target="_blank">
+      <div class="card">Asylum</div>
+    </a>
+
+    <a href="https://www.amazon.com/Anonymity-Mr-Harsh-Vardhan-Maskara/dp/B0GRQW2TFQ" target="_blank">
+      <div class="card">Anonymity</div>
+    </a>
+
+  </div>
 </section>
 
 <section>
@@ -157,11 +192,6 @@
     People don’t always say things directly.  
     But if you listen carefully enough, they tell you everything.
   </p>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>Email: harshmaskara01@gmail.com</p>
 </section>
 
 <footer>
