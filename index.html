@@ -11,53 +11,81 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #fff;
+      background: #ffffff;
       color: #111;
       line-height: 1.6;
     }
 
     header {
-      padding: 60px 20px;
+      padding: 100px 20px 60px;
       text-align: center;
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 48px;
       margin-bottom: 10px;
+      letter-spacing: -1px;
     }
 
-    p.subtitle {
-      color: #555;
+    .subtitle {
+      color: #666;
+      font-size: 20px;
+    }
+
+    .hero-text {
+      max-width: 700px;
+      margin: 20px auto;
       font-size: 18px;
+      color: #444;
     }
 
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
 
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      font-size: 24px;
     }
 
-    ul li {
-      margin-bottom: 10px;
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
     }
 
-    a {
+    .book {
+      border: 1px solid #eee;
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .book:hover {
+      border-color: #111;
+      transform: translateY(-5px);
+    }
+
+    .book a {
       text-decoration: none;
-      color: #000;
-      border-bottom: 1px solid #ccc;
+      color: #111;
+      font-weight: 500;
     }
 
-    a:hover {
-      border-bottom: 1px solid #000;
+    .services {
+      line-height: 2;
+      color: #444;
+    }
+
+    .philosophy {
+      font-style: italic;
+      color: #555;
     }
 
     footer {
       text-align: center;
-      padding: 40px;
+      padding: 60px;
       color: #777;
       font-size: 14px;
     }
@@ -69,38 +97,39 @@
 <header>
   <h1>Harsh Maskara</h1>
   <p class="subtitle">Author & Growth Strategy Consultant</p>
+  <p class="hero-text">
+    Understanding people—on paper and in markets.  
+    I write about human behavior and help businesses turn insight into meaningful growth.
+  </p>
 </header>
 
 <section>
-  <h2>About</h2>
-  <p>
-    I write to explore how people think, feel, and make decisions. I also work with businesses to turn insight into meaningful growth.
-  </p>
-</section>
-
-<section>
   <h2>Books</h2>
-  <ul>
-    <li><a href="#">Making Friends with Mania</a></li>
-    <li><a href="https://www.amazon.com/Eagles-fly-alone-guide-inner/dp/B0GPQ46SZQ" target="_blank">Eagles Fly Alone: A Guide to Inner Peace</a></li>
-    <li><a href="#">Deliberate</a></li>
-    <li><a href="https://www.amazon.com/Naked-Mr-Harsh-Vardhan-Maskara/dp/B0GQQ1MBTK" target="_blank">Naked</a></li>
-    <li><a href="https://www.amazon.com/Asylum-Mr-Harsh-Vardhan-Maskara/dp/B0GR9KBJD7" target="_blank">Asylum</a></li>
-    <li><a href="https://www.amazon.com/Anonymity-Mr-Harsh-Vardhan-Maskara/dp/B0GRQW2TFQ" target="_blank">Anonymity</a></li>
-  </ul>
+  <div class="books">
+    <div class="book"><a href="#">Making Friends with Mania</a></div>
+    <div class="book"><a href="https://www.amazon.com/Eagles-fly-alone-guide-inner/dp/B0GPQ46SZQ" target="_blank">Eagles Fly Alone</a></div>
+    <div class="book"><a href="#">Deliberate</a></div>
+    <div class="book"><a href="https://www.amazon.com/Naked-Mr-Harsh-Vardhan-Maskara/dp/B0GQQ1MBTK" target="_blank">Naked</a></div>
+    <div class="book"><a href="https://www.amazon.com/Asylum-Mr-Harsh-Vardhan-Maskara/dp/B0GR9KBJD7" target="_blank">Asylum</a></div>
+    <div class="book"><a href="https://www.amazon.com/Anonymity-Mr-Harsh-Vardhan-Maskara/dp/B0GRQW2TFQ" target="_blank">Anonymity</a></div>
+  </div>
 </section>
 
 <section>
   <h2>Work With Me</h2>
-  <p>
-    Growth strategy, marketing positioning, consumer insight, and qualitative research.
+  <p class="services">
+    Growth strategy <br>
+    Marketing positioning <br>
+    Consumer insight <br>
+    Qualitative research
   </p>
 </section>
 
 <section>
   <h2>Philosophy</h2>
-  <p>
-    People don’t always say things directly. But if you listen carefully enough, they tell you everything.
+  <p class="philosophy">
+    People don’t always say things directly.  
+    But if you listen carefully enough, they tell you everything.
   </p>
 </section>
 
