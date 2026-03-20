@@ -279,7 +279,10 @@ a {
 
         .book img {
             width: 100%;
-            border-radius: 8px;
+            height: 240px;        /* force same height */
+            object-fit: contain;  /* keeps full cover visible */
+            background: #fff;     /* fills empty space nicely */
+            border-radius: 10px;
         }
 
         a {
