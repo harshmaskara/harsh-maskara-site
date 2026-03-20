@@ -274,15 +274,19 @@ a {
         }
 
         .book {
-            width: 150px;
-            text-align: center;
+            width: 160px;
+            height: 260px;              /* fixed card size */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .book img {
             width: 100%;
-            height: 240px;        /* force same height */
-            object-fit: contain;  /* keeps full cover visible */
-            background: #fff;     /* fills empty space nicely */
+            height: 220px;
+            object-fit: contain;        /* keeps full image */
+            background: #f5f5f5;        /* adds visual padding */
+            padding: 12px;              /* equal spacing */
             border-radius: 10px;
         }
 
